@@ -1,0 +1,23 @@
+/* tables */
+table {
+	padding: 5px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+th {
+	padding: 5px;
+}
+td {
+	padding: 5px;
+	text-align: center;
+}
+
+/* progess bars */
+.progress-bg {
+	background-color: #FFEEB0;
+}
+.progress-bar {
+	background-color: #C7C12F;
+	padding: 5px;
+	text-align: right;
+}
