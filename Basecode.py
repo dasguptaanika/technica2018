@@ -16,31 +16,26 @@ while(condition == True):
     wordlist = words.split();
     listlen = len(wordlist)
     finalList = []
-    repeatedWords = []
 
     #Figuring out if the words are unique
-    uniqueness = False
     minwords = False
-    while((uniqueness == False)and(minwords == False)):
-        flag = 0
-        print(wordlist)
+    while(minwords==False):
         for x in range(listlen):
             if(wordlist[x] not in finalList):
                 finalList.append(wordlist[x])
-                uniqueness = True
-                if(len(finalList)>=10):
-                    minwords = True
-                    print("success!")
-                else:
-                    input("Your answer must be thorough and detailed, containing \
-more than 10 unique words.")
-                    phrase = "Hello! What do you plan to achieve in your life?"
-                    words = input(phrase)
-                    wordlist = words.split();
-                    listlen = len(wordlist)
-                    finalList = []
-                
-        print(finalList)
+        if(len(finalList)>=10):
+            minwords = True
+            print("Success!")
+        else:
+            input("Your answer must be thorough and detailed, containing\
+more than 10 unique words. ")
+            phrase = "Hello! What do you plan to achieve in your life?"
+            words = input(phrase)
+            wordlist = words.split();
+            listlen = len(wordlist)
+            finalList = []
+        
+    print(finalList)
     input("Press enter")
     
 
